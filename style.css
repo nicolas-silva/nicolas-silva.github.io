@@ -164,3 +164,7 @@ footer{
 footer span{
 	font-size: 0.5em;
 }
+
+.info-bg{
+    background-color: rgba(131, 127, 127, 0.7);
+}

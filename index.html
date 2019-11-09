@@ -6,31 +6,33 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    
+
     <title>Nicolas Silva</title>
-    
+
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    
+
     <!-- Bootstrap core CSS     -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-    
-	<!--  CSS for Demo Purpose, don't include it in your project     -->
-	<link href="assets/css/demo.css" rel="stylesheet" />
-    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet" />
+
+    <!--  Internal CSS     -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-    
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500">
         <div class="container">
             <div class="navbar-translate">
-                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar"></span>
                     <span class="navbar-toggler-bar"></span>
                     <span class="navbar-toggler-bar"></span>
@@ -52,15 +54,15 @@
                         </a>
                     </li> -->
                     <li class="nav-item">
-						<a href="index.html" target="_blank" class="nav-link">Home</a>
+                        <a href="index.html" target="_blank" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-						<a href="profile.html" target="_blank" class="nav-link">Profile</a>
+                        <a href="profile.html" target="_blank" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
-						<a href="contact.html" target="_blank" class="nav-link">Contact</a>
+                        <a href="contact.html" target="_blank" class="nav-link">Contact</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -86,7 +88,9 @@
                         <div class="col-lg-6 col-md-12">
                             <h2 class="title">Web Development</h2><br>
                             <p class="description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eum deserunt minima placeat corrupti accusamus modi velit eveniet. Perspiciatis recusandae expedita laudantium qui sequi tempore officiis provident dolore voluptas sed!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eum deserunt minima
+                                placeat corrupti accusamus modi velit eveniet. Perspiciatis recusandae expedita
+                                laudantium qui sequi tempore officiis provident dolore voluptas sed!
                             </p><br>
                             <a href="profile.html" class="btn btn-default btn-round" target="_blank">See Profile</a>
                         </div>
@@ -118,37 +122,92 @@
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
                             <h2 class="title">Check out the latest projects</h2>
-                            <p class="description">Let's start your project today. Check my portifolio and find out how I can improve your web presence.</p>
+                            <p class="description">Let's start your project today. Check my portifolio and find out how
+                                I can improve your web presence.</p>
                         </div>
+                    </div>
+                    <!-- <div class="row"> -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="profile.html">
+                                    <img class="d-block w-80 project-display" src="assets/img/examples/landing-page.jpg"
+                                        alt="First slide">
+                                </a>
+                                <div class="carousel-caption d-block">
+                                    <a href="profile.html">
+                                        <p class="h1 text-warning">Personal Website</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="profile.html"><img class="d-block w-80 project-display"
+                                        src="assets/img/examples/profile-page.jpg" alt="Second slide"></a>
+                                <div class="carousel-caption d-block">
+                                    <a href="profile.html">
+                                        <p class="h1 text-warning">Digital Marketing</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="profile.html"><img class="d-block w-80 project-display" src="img/melbourne.jpg"
+                                        alt="Third slide">
+                                    <div class="carousel-caption d-block">
+                                </a>
+                                <a href="profile.html">
+                                    <p class="h1 text-warning">Travelling</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="profile.html"><img class="d-block w-80 project-display" src="img/latte.jpg"
+                                    alt="Fourth slide">
+                                <div class="carousel-caption d-block">
+                            </a>
+                            <a href="profile.html">
+                                <p class="h1 text-warning">Small Business</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="profile.html"><img class="d-block w-80 project-display" src="img/saopaulo.jpg"
+                                alt="Fifth slide">
+                            <div class="carousel-caption d-block">
+                        </a>
+                        <a href="profile.html">
+                            <p class="h1 text-warning">Offshore</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="section section-dark section-project-items">
-                <div class="container">
-                    <div class="row projects">
-                        <div class="col-md-6 text-center">
-                            <a href="examples/landing.html" target="_blank">
-                                <img src="assets/img/examples/landing-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            </a><br>
-                            <a href="examples/landing.html" class="btn btn-outline-neutral btn-round" target="_blank">Landing Page</a>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <a href="profile.html" target="_blank">
-                                <img src="assets/img/examples/profile-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            </a><br>
-                            <a href="profile.html" class="btn btn-outline-neutral btn-round" target="_blank">Profile Page</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-	</div>
+        <!-- </div> -->
+    </div>
+    </div>
+    </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="credits ml-auto">
                     <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script>, developed by nicolas-silva
+                        ©
+                        <script>document.write(new Date().getFullYear())</script>, developed by nicolas-silva
                     </span>
                 </div>
             </div>
