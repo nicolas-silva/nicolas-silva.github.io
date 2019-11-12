@@ -5695,7 +5695,7 @@ textarea.form-control {
   max-height: 700px;
 }
 .page-header.page-header-xs {
-  min-height: 40vh !important;
+  min-height: 20vh !important;
 }
 .page-header.section-dark .content-center,
 .page-header.section-dark .category-absolute {

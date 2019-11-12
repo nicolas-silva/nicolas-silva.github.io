@@ -1,14 +1,12 @@
 body{
 	font-family: georgia;
 	color: white;
-	background-image: url(img/backgroundimg.jpg);
-	background-size: cover;
 	/* height: 100%; */
 	margin: 0px;
 }
 
 header{
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 
