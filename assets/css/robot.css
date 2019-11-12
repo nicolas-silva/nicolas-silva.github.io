@@ -1,0 +1,219 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	position: relative;
+}
+
+.robots.dialog{
+	margin: -200 auto;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 100px 100px; 
+	margin: -85px auto 0;
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.torso {
+	/*-webkit-animation: skew 3s infinite;
+	-moz-animation: skew 3s infinite;
+	-o-animation: skew 3s infinite;
+	animation: skew 3s infinite;
+	 -webkit-transform: skew(10deg);
+	-moz-transform: skew(10deg);
+	-o-transform: skew(10deg);
+	-ms-transform: skew(10deg);
+	transform: skew(10deg);
+	animation-direction: alternate;*/
+}
+
+@keyframes bellydance{
+	50% {
+		-webkit-transform: skew(10deg);
+		-moz-transform: skew(10deg);
+		-o-transform: skew(10deg);
+		-ms-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+	100% {
+		-webkit-transform: skew(-10deg);
+		-moz-transform: skew(-10deg);
+		-o-transform: skew(-10deg);
+		-ms-transform: skew(-10deg);
+		transform: skew(-10deg);
+	}
+}
+
+@keyframes movearms{
+	50%{
+		transform: translateY(-40px);
+	}
+	100%{
+		transform: translateY(20px);
+	}
+}
+
+@keyframes twisthead{
+	100%{
+		transition: 1s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	border-radius: 200px 200px 100px 100px;
+	}
+}
+
+
+
+.head:hover {
+	-webkit-animation-name: twisthead; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  	animation-name: twisthead;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+
+
+.torso:hover {
+	-webkit-animation-name: bellydance; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  	animation-name: bellydance;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+.left_arm:hover,
+ .right_arm:hover {
+	-webkit-animation-name: movearms; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  	animation-name: movearms;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+	flex-wrap: wrap;
+	margin: 0 auto; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+
+
+
+
